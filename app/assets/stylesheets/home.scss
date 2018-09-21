@@ -1,0 +1,180 @@
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+/* header ヘッダー ================================ */
+body{
+  font-size: 16px;
+  font-family: Verdana,sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background: white;
+  width: 100%;
+}
+
+
+.top1{
+  width: 30%;
+  height: 10px;
+  background-color: #04B4AE;
+  float: left;
+}
+
+.top2{
+  width: 70%;
+  height: 10px;
+  background-color: #0489B1;
+  float: right;
+}
+
+.container{
+  width: 100%;
+  height: 166px;
+  margin: 0;
+  padding: 50px 0 0 0;
+}
+
+.container h1{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 176px;
+  font-weight: bold;
+  font-size: 34px;
+  color: #084B8A;
+}
+
+.contact{
+  float: right;
+  margin-top: 35px;
+  margin-right: 220px;
+}
+
+.contact p{
+  font-size: 13px;
+  color: #084B8A;
+  margin-bottom: 3px;
+}
+
+.contact a{
+  font-size: 32px;
+  color: #084B8A;
+  text-decoration: none;
+}
+
+.bg{
+  width: 100%;
+  height: 216px;
+  // border-top: 10px black;
+}
+
+/* header */
+
+.header-menus {
+  width: 100%;
+  height: 47px;
+  background-color: #F2F2F2;
+}
+
+.header-menus ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 176px;
+  padding-right: 176px;
+  margin: 0;
+}
+
+.header-menus li {
+  padding: 15px 0;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+.header-menus a {
+  text-decoration: none;
+  color: #2E2E2E;
+  transition: all 0.5s ease
+}
+
+.header-menus a:hover{
+  color: #01DFD7;
+}
+
+
+.btn {
+  float: right;
+  display: inline-block;
+  width: 350px;
+  height: 40px;
+  background: #04B45F;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 0;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 5px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.btn:hover{
+  color: #2E2E2E;
+}
+
+/* top トップ ================================ */
+
+.top-image{
+  width: 100%;
+  position: relative;
+}
+
+// https://www.sejuku.net/blog/56401
+
+.flex-box {
+    background-color: white;     /* 背景色指定 */
+    display: flex;
+    width: 60%;
+    height: 270px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -420px;
+    opacity: 0.8;
+    // justify-content: center;
+}
+ 
+.flex-item {
+    width: 100%;
+    height: 270px;
+    padding: 10px;
+    opacity: 0.6;
+    color:  #fff;               /* 文字色 */
+    margin:  0;              /* 外側の余白 */
+    text-align: center;
+    font-size: 32px;
+    line-height: 270px;
+    font-weight: bold;
+
+}
+ 
+.flex-item:nth-child(1) {
+    background-color:  #04B4AE; /* 背景色指定 */
+}
+ 
+.flex-item:nth-child(2) {
+    background-color:  #0489B1; /* 背景色指定 */
+}
+
+.flex-item:nth-child(3) {
+    background-color: #04B45F; /* 背景色指定 */
+}
+
+// http://www.sw-mono.blog/entry/2017/08/06/014056
+
+.about-us h1{
+  color: #04B4AE;
+  font-size: 56px;
+}

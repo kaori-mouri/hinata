@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ひなた訪問看護ステーション</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+  </head>
+
+  <body>
+   <header class ="bg">
+    <div class ="top1"></div>
+    <div class ="top2">
+      <a href ="sukedule" target="_blank" class="btn">空き状況を確認する <i class="fas fa-external-link-alt"></i></a>
+    </div>
+     <div class = "container">
+      
+      <div class ="contact">
+        <p>お電話でのお問い合わせ</p>
+        <a href ="tel:0776-43-0665"><i class="fas fa-phone"></i> 0776-43-0665</a>
+      </div>
+      
+      <h1>ひなた訪問看護ステーション</h1>
+      
+        <div class="header-menus">
+         <ul>
+          <li>
+            <a href="/about"><span>ひなたの訪問看護</span></a>
+          </li>
+          <li>
+            <a href="/work"><span>働き方を知る</span></a>
+          </li>
+          <li>
+            <a href="/recruit"><span>募集要項</span></a>
+          </li> 
+          <li>
+            <a href="/date"><span>ひなたの実績</span></a>
+          </li>
+          <li>
+            <a href="/target"><span>利用者情報</span></a>
+          </li>
+          <li>
+            <a href="mailto:yahara.kaori@gmail.com" target="_blank"><span>お問い合わせ</span></a>
+          </li> 
+   　   　</ul>
+   　    </div>   　
+   　
+   　</div>
+　　</header>
+    <%= yield %>
+  </body>
+</html>
