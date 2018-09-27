@@ -30,6 +30,8 @@
       
         <div class="header-menus">
          <ul>
+         <% if session[:user_id] %>
+         
           <li>
             <a href="/about"><span>ひなたの訪問看護</span></a>
           </li>
@@ -48,6 +50,35 @@
           <li>
             <a href="mailto:yahara.kaori@gmail.com" target="_blank"><span>お問い合わせ</span></a>
           </li> 
+          <li>
+            <!-- ログアウト用のリンクを追加してください -->
+            <%= link_to("ログアウト", "/logout", {method: :post}) %>
+          </li>
+         
+         <% else %>
+          <li>
+            <a href="/about"><span>ひなたの訪問看護</span></a>
+          </li>
+          <li>
+            <a href="/work"><span>働き方を知る</span></a>
+          </li>
+          <li>
+            <a href="/recruit"><span>募集要項</span></a>
+          </li> 
+          <li>
+            <a href="/date"><span>ひなたの実績</span></a>
+          </li>
+          <li>
+            <a href="/target"><span>利用者情報</span></a>
+          </li>
+          <li>
+            <a href="mailto:yahara.kaori@gmail.com" target="_blank"><span>お問い合わせ</span></a>
+          </li> 
+          <li>
+            <a href="login"><span>ログイン</span></a>
+          </li> 
+         <% end %>
+         
    　   　</ul>
    　    </div>   　
    　

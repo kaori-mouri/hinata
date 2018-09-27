@@ -1,0 +1,10 @@
+<div class="main user-show">
+  <div class="container">
+    <div class="staff">
+      <h2><%= @staff.name %></h2>
+      <p><%= @staff.type %></p>
+      <!-- ユーザー編集ページへのリンクを作成してください -->
+      <%= link_to("編集", "/staffs/#{@staff.id}/edit") %>
+    </div>
+  </div>
+</div>

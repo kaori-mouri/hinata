@@ -1,0 +1,30 @@
+<div class="main users-new">
+  <div class="container">
+    <div class="form-heading">新規スタッフ登録</div>
+    <div class="form users-form">
+      <div class="form-body">
+          
+        <% @staff.errors.full_messages.each do |message| %>
+          <div class="form-error">
+            <%= message %>
+          </div>
+        <% end %>
+        
+        <%= form_tag("/staffs/create") do %>
+          <p>スタッフ名</p>
+          <!-- <input>タグを用いて1行の入力フォームを作成してください -->
+          <input name="name" value="<%= @staff.name %>">
+          <p>属性</p>
+          <!-- ラジオボタン参考http://www.htmq.com/html/input_radio.shtml -->
+          <p>
+          <input type="radio" name="type" value="nurse" checked="checked">看護師
+    　　　　<input type="radio" name="type" value="pt">理学療法士
+    　　　　<input type="radio" name="type" value="ot">機能訓練士
+    　　　　<input type="radio" name="type" value="driver">ドライバー
+    　　　　</p>
+          <input type="submit" value="スタッフ登録">
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
