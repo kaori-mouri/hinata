@@ -10,6 +10,7 @@
           </div>
         <% end %>
         
+        
         <%= form_tag("/staffs/create") do %>
           <p>スタッフ名</p>
           <!-- <input>タグを用いて1行の入力フォームを作成してください -->
@@ -17,10 +18,10 @@
           <p>属性</p>
           <!-- ラジオボタン参考http://www.htmq.com/html/input_radio.shtml -->
           <p>
-          <input type="radio" name="type" value="nurse" checked="checked">看護師
-    　　　　<input type="radio" name="type" value="pt">理学療法士
-    　　　　<input type="radio" name="type" value="ot">機能訓練士
-    　　　　<input type="radio" name="type" value="driver">ドライバー
+          <input type="radio" name="staffs_attr" value="nr" checked="checked">看護師
+          <input type="radio" name="staffs_attr" value="pt">理学療法士
+          <input type="radio" name="staffs_attr" value="ot">機能訓練し
+          <input type="radio" name="staffs_attr" value="dr">ドライバー
     　　　　</p>
           <input type="submit" value="スタッフ登録">
         <% end %>

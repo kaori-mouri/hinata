@@ -2,7 +2,9 @@
   <div class="container">
     <div class="staff">
       <h2><%= @staff.name %></h2>
-      <p><%= @staff.type %></p>
+      <% type = {"pt" => "理学療法士", "ot"=> "作業療法士","dr"=> "ドライバー","nr"=> "看護師"}  %>
+      <%= type[@staff.staffs_attr] %><br>
+
       <!-- ユーザー編集ページへのリンクを作成してください -->
       <%= link_to("編集", "/staffs/#{@staff.id}/edit") %>
     </div>

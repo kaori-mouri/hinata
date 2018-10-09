@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  staff_id: 1
+  work_date: 2018-10-03
+  work_time: MyString
+  status: 1
+
+two:
+  staff_id: 1
+  work_date: 2018-10-03
+  work_time: MyString
+  status: 1

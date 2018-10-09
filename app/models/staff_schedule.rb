@@ -1,0 +1,2 @@
+class StaffSchedule < ApplicationRecord
+end

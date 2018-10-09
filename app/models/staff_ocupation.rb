@@ -1,0 +1,2 @@
+class StaffOcupation < ApplicationRecord
+end
