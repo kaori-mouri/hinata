@@ -1,38 +1,41 @@
 <h1>スタッフスケジュール管理画面</h1>
 <p>Find me in app/views/staff_schedules/index.html.erb</p>
 
-<!--https://ikm.hatenablog.jp/entry/2013/12/04/185957-->
-<%= check_box 'page', 'freezeflag', {:checked => true}, true, false %>
-<input name="page[freezeflag]" type="hidden" value="false" />
-<input checked="checked" id="page_freezeflag" name="page[freezeflag]" type="checkbox" value="true" />
+
 
 
 <!--https://jp.vuejs.org/v2/guide/forms.html-->
 <%= form_tag("/staff_schedules/create") do %>
  <div id='staff_schedule'>
-  <p>9:30-10:00</p>  
+   
+<% @staffs.each do |staff| %>
   <ul>
-    <li>
-      <label for="@staff_schedule">看護師A</label>
-       <input type="checkbox" name="staff_schedule" checked="checked" >
-    </li>
-    <li>
-      <label for="@staff_schedule">看護師B</label>
-       <input type="checkbox" name="staff_schedule" checked="checked" >
-    </li>
-    <li>
-      <label for="@staff_schedule">看護師C</label>
-      <input type="checkbox" name="staff_schedule" checked="checked" >
-    </li>
-    <li>
-      <label for="@staff_schedule">看護師D</label>
-       <input type="checkbox" name="staff_schedule" checked="checked" >
-    </li>
-    <li>
-      <label for="@staff_schedule">看護師E</label>
-       <input type="checkbox" name="staff_schedule" checked="checked" >
-    </li>
+   <label for="@staff_schedule"><%= staff.name  %></label>
+    <% 17.times do |i| %>  
+     <p><%= i+1  %></p>  
+      <li>
+        
+         <input type="checkbox" name=<%= "staff_schedule[#{staff.id}][#{i}]" %> checked="checked" >
+      </li>
+    <% end %>
+    <!--<li>-->
+    <!--  <label for="@staff_schedule">看護師B</label>-->
+    <!--   <input type="checkbox" name="staff_schedule" checked="checked" >-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--  <label for="@staff_schedule">看護師C</label>-->
+    <!--  <input type="checkbox" name="staff_schedule" checked="checked" >-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--  <label for="@staff_schedule">看護師D</label>-->
+    <!--   <input type="checkbox" name="staff_schedule" checked="checked" >-->
+    <!--</li>-->
+    <!--<li>-->
+    <!--  <label for="@staff_schedule">看護師E</label>-->
+    <!--   <input type="checkbox" name="staff_schedule" checked="checked" >-->
+    <!--</li>-->
   </ul>
+  <% end %>
     
   <!--<p>9:30-10:00</p>  -->
   <!--<ul>-->

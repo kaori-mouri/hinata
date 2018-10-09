@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'schedule/index' => "schedule#index"
   get 'schedule/new' => "schedule#new"
-  post "staff_schedules/create" => "staff_schedule#create"
+  post "staff_schedules/create" => "staff_schedules#create"
   get "staff_schedules/new" => "staff_schedules#new"
   get "staff_schedules/index" => "staff_schedules#index"
   get "login" => "users#login_form"
